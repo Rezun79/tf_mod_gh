@@ -16,8 +16,8 @@ resource "github_repository_file" "gitignore" {
   overwrite_on_create = true
 }
 
-resource "time_sleep" "wait_30_seconds" {
-  depends_on = [github_repository.AZ_RG]
+# resource "time_sleep" "wait_30_seconds" {
+#   depends_on = [github_repository.AZ_RG]
 
-  create_duration = "10s"
-}
+#   create_duration = "10s"
+# }
