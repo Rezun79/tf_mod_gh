@@ -17,6 +17,7 @@ terraform {
 # }
 
 provider "github" {
+  owner = local.github_organization
   app_auth {
     id              = local.github_app_id
     installation_id = local.github_app_instalation_id
