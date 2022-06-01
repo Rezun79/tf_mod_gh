@@ -18,8 +18,8 @@ terraform {
 
 provider "github" {
   app_auth {
-    id              = var.github_app_id
-    installation_id = var.github_app_instalation_id
-    pem_file        = var.github_app_priv_key
+    id              = local.github_app_id
+    installation_id = local.github_app_instalation_id
+    pem_file        = local.github_app_priv_key
   }
 }
