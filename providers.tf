@@ -11,7 +11,15 @@ terraform {
   }
 }
 
+# provider "github" {
+#   token = local.github_token
+#   owner = local.github_organization
+# }
+
 provider "github" {
-  token = local.github_token
-  owner = local.github_organization
+  app_auth {
+    id              = var.github_app_id
+    installation_id = var.github_app_instalation_id
+    pem_file        = var.github_app_priv_key
+  }
 }
