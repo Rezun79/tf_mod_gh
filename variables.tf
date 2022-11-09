@@ -1,10 +1,10 @@
 variable "rg_name" {
 }
 
-# variable "github_token" {
-#   type = string
-#   sensitive = true
-# }
+variable "github_token" {
+  type = string
+  sensitive = true
+}
 
 variable "github_app_id" {
   type = string
