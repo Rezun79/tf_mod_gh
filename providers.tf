@@ -11,10 +11,10 @@ terraform {
   }
 }
 
-# # provider "github" {
-# #   token = local.github_token
-# #   owner = local.github_organization
-# # }
+provider "github" {
+  token = local.github_token
+  owner = local.github_organization
+}
 
 # provider "github" {
 #   owner = local.github_organization
